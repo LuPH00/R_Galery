@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(197, 219, 170);
+    margin: 0;
+    font-family: Arial;
+  }
+  .cabez {
+    background-image: url(images/banner.jpg);
+    text-align: center;
+    padding: 32px;
+  }
+  .fila {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .columna {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .columna img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
